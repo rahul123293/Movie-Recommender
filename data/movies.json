@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "title": "The Shawshank Redemption",
+    "genres": "Drama",
+    "overview": "Two imprisoned men bond over years finding solace and redemption through acts of decency.",
+    "rating": 9.3,
+    "year": 1994,
+    "poster": ""
+  },
+  {
+    "id": 2,
+    "title": "The Godfather",
+    "genres": "Crime Drama",
+    "overview": "The aging patriarch of an organized crime dynasty transfers control to his reluctant son.",
+    "rating": 9.2,
+    "year": 1972,
+    "poster": ""
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "genres": "Action Thriller",
+    "overview": "Batman battles the Joker a criminal mastermind who creates chaos in Gotham City.",
+    "rating": 9.0,
+    "year": 2008,
+    "poster": ""
+  },
+  {
+    "id": 4,
+    "title": "Pulp Fiction",
+    "genres": "Crime Drama",
+    "overview": "The lives of two hitmen a boxer a gangster and his wife intertwine in tales of violence.",
+    "rating": 8.9,
+    "year": 1994,
+    "poster": ""
+  },
+  {
+    "id": 5,
+    "title": "Forrest Gump",
+    "genres": "Drama Romance",
+    "overview": "The presidencies of Kennedy and Johnson Vietnam Watergate through the eyes of an Alabama man.",
+    "rating": 8.8,
+    "year": 1994,
+    "poster": ""
+  },
+  {
+    "id": 6,
+    "title": "Inception",
+    "genres": "Sci-Fi Thriller",
+    "overview": "A thief who steals corporate secrets through dream-sharing technology is given a task to plant an idea.",
+    "rating": 8.8,
+    "year": 2010,
+    "poster": ""
+  },
+  {
+    "id": 7,
+    "title": "The Matrix",
+    "genres": "Sci-Fi Action",
+    "overview": "A computer hacker learns reality is a simulation and joins a rebellion against machines.",
+    "rating": 8.7,
+    "year": 1999,
+    "poster": ""
+  },
+  {
+    "id": 8,
+    "title": "Goodfellas",
+    "genres": "Crime Drama",
+    "overview": "The story of Henry Hill and his life in the mob covering his relationship with his wife.",
+    "rating": 8.7,
+    "year": 1990,
+    "poster": ""
+  },
+  {
+    "id": 9,
+    "title": "The Silence of the Lambs",
+    "genres": "Thriller Horror",
+    "overview": "A young FBI cadet seeks help from imprisoned cannibal Hannibal Lecter to catch a serial killer.",
+    "rating": 8.6,
+    "year": 1991,
+    "poster": ""
+  },
+  {
+    "id": 10,
+    "title": "Interstellar",
+    "genres": "Sci-Fi Drama",
+    "overview": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity survival.",
+    "rating": 8.6,
+    "year": 2014,
+    "poster": ""
+  },
+  {
+    "id": 11,
+    "title": "The Lion King",
+    "genres": "Animation Drama",
+    "overview": "Lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
+    "rating": 8.5,
+    "year": 1994,
+    "poster": ""
+  },
+  {
+    "id": 12,
+    "title": "Toy Story",
+    "genres": "Animation Comedy",
+    "overview": "A cowboy doll is threatened by a new spaceman figure as the favorite toy of Andy.",
+    "rating": 8.3,
+    "year": 1995,
+    "poster": ""
+  },
+  {
+    "id": 13,
+    "title": "Finding Nemo",
+    "genres": "Animation Comedy",
+    "overview": "After his son is taken by a diver a clownfish sets out on a journey to bring him home.",
+    "rating": 8.1,
+    "year": 2003,
+    "poster": ""
+  },
+  {
+    "id": 14,
+    "title": "The Avengers",
+    "genres": "Action Sci-Fi",
+    "overview": "Earths mightiest heroes must come together to stop Loki from conquering Earth.",
+    "rating": 8.0,
+    "year": 2012,
+    "poster": ""
+  },
+  {
+    "id": 15,
+    "title": "Titanic",
+    "genres": "Drama Romance",
+    "overview": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the Titanic.",
+    "rating": 7.9,
+    "year": 1997,
+    "poster": ""
+  },
+  {
+    "id": 16,
+    "title": "Jurassic Park",
+    "genres": "Sci-Fi Action",
+    "overview": "During a preview tour a theme park suffers a major power breakdown and dinosaurs escape.",
+    "rating": 8.1,
+    "year": 1993,
+    "poster": ""
+  },
+  {
+    "id": 17,
+    "title": "The Truman Show",
+    "genres": "Drama Comedy",
+    "overview": "An insurance salesman discovers his whole life is a TV show.",
+    "rating": 8.1,
+    "year": 1998,
+    "poster": ""
+  },
+  {
+    "id": 18,
+    "title": "Schindlers List",
+    "genres": "Drama History",
+    "overview": "In German-occupied Poland during World War II industrialist Oskar Schindler saves Jewish lives.",
+    "rating": 8.9,
+    "year": 1993,
+    "poster": ""
+  },
+  {
+    "id": 19,
+    "title": "Fight Club",
+    "genres": "Drama Thriller",
+    "overview": "An insomniac office worker and a soap salesman build a network of underground fight clubs.",
+    "rating": 8.8,
+    "year": 1999,
+    "poster": ""
+  },
+  {
+    "id": 20,
+    "title": "Gladiator",
+    "genres": "Action Drama",
+    "overview": "A Roman general is betrayed and his family murdered by a corrupt prince.",
+    "rating": 8.5,
+    "year": 2000,
+    "poster": ""
+  },
+  {
+    "id": 21,
+    "title": "The Departed",
+    "genres": "Crime Thriller",
+    "overview": "An undercover cop and a mole in the police attempt to identify each other.",
+    "rating": 8.5,
+    "year": 2006,
+    "poster": ""
+  },
+  {
+    "id": 22,
+    "title": "Saving Private Ryan",
+    "genres": "War Drama",
+    "overview": "American soldiers behind enemy lines are ordered to find a paratrooper whose brothers have been killed.",
+    "rating": 8.6,
+    "year": 1998,
+    "poster": ""
+  },
+  {
+    "id": 23,
+    "title": "Braveheart",
+    "genres": "Action Drama History",
+    "overview": "Scottish warrior William Wallace leads a revolt against the cruel English ruler Edward I.",
+    "rating": 8.4,
+    "year": 1995,
+    "poster": ""
+  },
+  {
+    "id": 24,
+    "title": "Back to the Future",
+    "genres": "Sci-Fi Comedy",
+    "overview": "A teenager is accidentally sent back in time to 1955 where he must ensure his parents meet.",
+    "rating": 8.5,
+    "year": 1985,
+    "poster": ""
+  },
+  {
+    "id": 25,
+    "title": "The Terminator",
+    "genres": "Sci-Fi Action",
+    "overview": "A cyborg assassin is sent from the future to kill the mother of the man who will lead humanity.",
+    "rating": 8.1,
+    "year": 1984,
+    "poster": ""
+  },
+  {
+    "id": 26,
+    "title": "Alien",
+    "genres": "Sci-Fi Horror",
+    "overview": "The crew of a commercial spacecraft encounters a deadly extraterrestrial life form.",
+    "rating": 8.5,
+    "year": 1979,
+    "poster": ""
+  },
+  {
+    "id": 27,
+    "title": "Blade Runner",
+    "genres": "Sci-Fi Thriller",
+    "overview": "A blade runner must pursue and terminate four replicants who stole a ship.",
+    "rating": 8.1,
+    "year": 1982,
+    "poster": ""
+  },
+  {
+    "id": 28,
+    "title": "E.T. the Extra-Terrestrial",
+    "genres": "Sci-Fi Drama",
+    "overview": "A lonely boy befriends a gentle alien who is stranded on Earth.",
+    "rating": 7.8,
+    "year": 1982,
+    "poster": ""
+  },
+  {
+    "id": 29,
+    "title": "Home Alone",
+    "genres": "Comedy",
+    "overview": "An eight-year-old kid is accidentally left behind while his family flies to France.",
+    "rating": 7.7,
+    "year": 1990,
+    "poster": ""
+  },
+  {
+    "id": 30,
+    "title": "Die Hard",
+    "genres": "Action Thriller",
+    "overview": "A New York cop must foil an elaborate heist at a Los Angeles skyscraper Christmas party.",
+    "rating": 8.2,
+    "year": 1988,
+    "poster": ""
+  },
+  {
+    "id": 31,
+    "title": "The Princess Bride",
+    "genres": "Romance Comedy Adventure",
+    "overview": "A farmhand boy rescues a princess from an evil prince with the help of colorful companions.",
+    "rating": 8.0,
+    "year": 1987,
+    "poster": ""
+  },
+  {
+    "id": 32,
+    "title": "Groundhog Day",
+    "genres": "Comedy Drama",
+    "overview": "A weatherman finds himself reliving the same day over and over again.",
+    "rating": 8.0,
+    "year": 1993,
+    "poster": ""
+  },
+  {
+    "id": 33,
+    "title": "Clueless",
+    "genres": "Comedy Romance",
+    "overview": "A rich high school student uses her popularity to help those around her while searching for love.",
+    "rating": 7.0,
+    "year": 1995,
+    "poster": ""
+  },
+  {
+    "id": 34,
+    "title": "Mean Girls",
+    "genres": "Comedy",
+    "overview": "A girl who was homeschooled transfers to a public high school and falls in with a clique.",
+    "rating": 7.1,
+    "year": 2004,
+    "poster": ""
+  },
+  {
+    "id": 35,
+    "title": "The Grand Budapest Hotel",
+    "genres": "Comedy Adventure",
+    "overview": "The adventures of a legendary concierge at a famous hotel between the wars.",
+    "rating": 8.1,
+    "year": 2014,
+    "poster": ""
+  },
+  {
+    "id": 36,
+    "title": "Parasite",
+    "genres": "Thriller Drama",
+    "overview": "A poor family schemes to become employed by a wealthy family.",
+    "rating": 8.6,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 37,
+    "title": "Get Out",
+    "genres": "Horror Thriller",
+    "overview": "A young African-American man visits his white girlfriends parents for the weekend.",
+    "rating": 7.7,
+    "year": 2017,
+    "poster": ""
+  },
+  {
+    "id": 38,
+    "title": "A Quiet Place",
+    "genres": "Horror Sci-Fi",
+    "overview": "A family struggles to survive in a post-apocalyptic world inhabited by blind monsters.",
+    "rating": 7.5,
+    "year": 2018,
+    "poster": ""
+  },
+  {
+    "id": 39,
+    "title": "Hereditary",
+    "genres": "Horror Drama",
+    "overview": "A grieving family is haunted by tragic and disturbing occurrences.",
+    "rating": 7.3,
+    "year": 2018,
+    "poster": ""
+  },
+  {
+    "id": 40,
+    "title": "The Conjuring",
+    "genres": "Horror Thriller",
+    "overview": "Paranormal investigators help a family terrorized by a dark presence in their farmhouse.",
+    "rating": 7.5,
+    "year": 2013,
+    "poster": ""
+  },
+  {
+    "id": 41,
+    "title": "Avengers Endgame",
+    "genres": "Action Sci-Fi",
+    "overview": "The surviving heroes work to reverse the damage done by Thanos and restore balance.",
+    "rating": 8.4,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 42,
+    "title": "Black Panther",
+    "genres": "Action Sci-Fi",
+    "overview": "The king of Wakanda must defend his nation from a vengeful outsider.",
+    "rating": 7.3,
+    "year": 2018,
+    "poster": ""
+  },
+  {
+    "id": 43,
+    "title": "Wonder Woman",
+    "genres": "Action Drama",
+    "overview": "An Amazonian princess leaves her island to fight in World War I.",
+    "rating": 7.4,
+    "year": 2017,
+    "poster": ""
+  },
+  {
+    "id": 44,
+    "title": "Spider-Man Into the Spider-Verse",
+    "genres": "Animation Action",
+    "overview": "Teen Miles Morales becomes the Spider-Man of his universe and meets alternate versions.",
+    "rating": 8.4,
+    "year": 2018,
+    "poster": ""
+  },
+  {
+    "id": 45,
+    "title": "Coco",
+    "genres": "Animation Drama",
+    "overview": "A young boy who dreams of becoming a musician embarks on an extraordinary journey to the Land of the Dead.",
+    "rating": 8.4,
+    "year": 2017,
+    "poster": ""
+  },
+  {
+    "id": 46,
+    "title": "Up",
+    "genres": "Animation Drama Adventure",
+    "overview": "A 78-year-old man flies to Paradise Falls with a young boy accidentally tagging along.",
+    "rating": 8.3,
+    "year": 2009,
+    "poster": ""
+  },
+  {
+    "id": 47,
+    "title": "WALL-E",
+    "genres": "Animation Sci-Fi Romance",
+    "overview": "A small waste-collecting robot inadvertently embarks on a space journey that will determine the fate of mankind.",
+    "rating": 8.4,
+    "year": 2008,
+    "poster": ""
+  },
+  {
+    "id": 48,
+    "title": "Inside Out",
+    "genres": "Animation Drama",
+    "overview": "A young girl is uprooted from her life when her family relocates forcing her emotions into turmoil.",
+    "rating": 8.2,
+    "year": 2015,
+    "poster": ""
+  },
+  {
+    "id": 49,
+    "title": "Knives Out",
+    "genres": "Mystery Thriller",
+    "overview": "A detective investigates the death of a patriarch of an eccentric wealthy family.",
+    "rating": 7.9,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 50,
+    "title": "Memento",
+    "genres": "Thriller Mystery",
+    "overview": "A man with short-term memory loss attempts to track down his wifes murderer.",
+    "rating": 8.4,
+    "year": 2000,
+    "poster": ""
+  },
+  {
+    "id": 51,
+    "title": "The Prestige",
+    "genres": "Drama Thriller Mystery",
+    "overview": "Two stage magicians engage in a bitter rivalry and resort to sabotage and trickery.",
+    "rating": 8.5,
+    "year": 2006,
+    "poster": ""
+  },
+  {
+    "id": 52,
+    "title": "Whiplash",
+    "genres": "Drama Music",
+    "overview": "A promising young drummer enrolls at a cutthroat music conservatory and is pushed beyond his limits.",
+    "rating": 8.5,
+    "year": 2014,
+    "poster": ""
+  },
+  {
+    "id": 53,
+    "title": "La La Land",
+    "genres": "Romance Drama Music",
+    "overview": "A jazz musician and an aspiring actress fall in love in Los Angeles.",
+    "rating": 8.0,
+    "year": 2016,
+    "poster": ""
+  },
+  {
+    "id": 54,
+    "title": "The Wolf of Wall Street",
+    "genres": "Crime Drama Comedy",
+    "overview": "Based on the true story of Jordan Belfort a stockbroker who engages in corruption and fraud.",
+    "rating": 8.2,
+    "year": 2013,
+    "poster": ""
+  },
+  {
+    "id": 55,
+    "title": "Django Unchained",
+    "genres": "Western Action",
+    "overview": "A freed slave and a German bounty hunter set out to rescue the slave's wife.",
+    "rating": 8.4,
+    "year": 2012,
+    "poster": ""
+  },
+  {
+    "id": 56,
+    "title": "Inglourious Basterds",
+    "genres": "War Drama Thriller",
+    "overview": "In Nazi-occupied France a group of Jewish soldiers plan to assassinate Nazi leaders.",
+    "rating": 8.3,
+    "year": 2009,
+    "poster": ""
+  },
+  {
+    "id": 57,
+    "title": "The Revenant",
+    "genres": "Adventure Drama Thriller",
+    "overview": "A frontiersman on a fur trading expedition fights for survival after being mauled by a bear.",
+    "rating": 8.0,
+    "year": 2015,
+    "poster": ""
+  },
+  {
+    "id": 58,
+    "title": "Mad Max Fury Road",
+    "genres": "Action Sci-Fi",
+    "overview": "In a post-apocalyptic world a woman rebels against a tyrannical ruler in the wasteland.",
+    "rating": 8.1,
+    "year": 2015,
+    "poster": ""
+  },
+  {
+    "id": 59,
+    "title": "John Wick",
+    "genres": "Action Thriller",
+    "overview": "An ex-hit-man comes out of retirement to track down the gangsters that killed his dog.",
+    "rating": 7.4,
+    "year": 2014,
+    "poster": ""
+  },
+  {
+    "id": 60,
+    "title": "Dune",
+    "genres": "Sci-Fi Adventure Drama",
+    "overview": "A mythic and emotionally charged hero's journey follows a noble family to a dangerous desert planet.",
+    "rating": 8.0,
+    "year": 2021,
+    "poster": ""
+  },
+  {
+    "id": 61,
+    "title": "No Country for Old Men",
+    "genres": "Crime Drama Thriller",
+    "overview": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong.",
+    "rating": 8.1,
+    "year": 2007,
+    "poster": ""
+  },
+  {
+    "id": 62,
+    "title": "There Will Be Blood",
+    "genres": "Drama History",
+    "overview": "A story of family religion hatred and oil told through the life of a prospector in late 1800s.",
+    "rating": 8.2,
+    "year": 2007,
+    "poster": ""
+  },
+  {
+    "id": 63,
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "genres": "Romance Drama Sci-Fi",
+    "overview": "When their relationship turns sour a couple undergoes a medical procedure to erase memories of each other.",
+    "rating": 8.3,
+    "year": 2004,
+    "poster": ""
+  },
+  {
+    "id": 64,
+    "title": "Her",
+    "genres": "Romance Drama Sci-Fi",
+    "overview": "A writer develops an unlikely relationship with an operating system designed to meet his every need.",
+    "rating": 8.0,
+    "year": 2013,
+    "poster": ""
+  },
+  {
+    "id": 65,
+    "title": "Lost in Translation",
+    "genres": "Drama Romance Comedy",
+    "overview": "A faded movie star and a neglected young woman form an unlikely bond in Tokyo.",
+    "rating": 7.7,
+    "year": 2003,
+    "poster": ""
+  },
+  {
+    "id": 66,
+    "title": "The Social Network",
+    "genres": "Drama Biography",
+    "overview": "Harvard student Mark Zuckerberg creates Facebook while being sued by others who claim ownership.",
+    "rating": 7.7,
+    "year": 2010,
+    "poster": ""
+  },
+  {
+    "id": 67,
+    "title": "Whiplash",
+    "genres": "Drama Music",
+    "overview": "A brilliant music student is pushed to his limits by a ruthless instructor at a prestigious conservatory.",
+    "rating": 8.5,
+    "year": 2014,
+    "poster": ""
+  },
+  {
+    "id": 68,
+    "title": "1917",
+    "genres": "War Drama",
+    "overview": "Two British soldiers are tasked with delivering a message that could save 1600 men.",
+    "rating": 8.3,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 69,
+    "title": "Dunkirk",
+    "genres": "War Drama Thriller",
+    "overview": "Allied soldiers from Belgium and Britain are surrounded by the German Army during the Second World War.",
+    "rating": 7.9,
+    "year": 2017,
+    "poster": ""
+  },
+  {
+    "id": 70,
+    "title": "Arrival",
+    "genres": "Sci-Fi Drama Mystery",
+    "overview": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft land worldwide.",
+    "rating": 7.9,
+    "year": 2016,
+    "poster": ""
+  },
+  {
+    "id": 71,
+    "title": "Ex Machina",
+    "genres": "Sci-Fi Drama Thriller",
+    "overview": "A programmer is selected to participate in a study involving an artificial intelligence housed in a robot.",
+    "rating": 7.7,
+    "year": 2014,
+    "poster": ""
+  },
+  {
+    "id": 72,
+    "title": "The Martian",
+    "genres": "Sci-Fi Drama Comedy",
+    "overview": "An astronaut becomes stranded on Mars after his team assumes him dead and must find a way to signal Earth.",
+    "rating": 8.0,
+    "year": 2015,
+    "poster": ""
+  },
+  {
+    "id": 73,
+    "title": "Gravity",
+    "genres": "Sci-Fi Thriller Drama",
+    "overview": "Two astronauts work together to survive after an accident leaves them stranded in space.",
+    "rating": 7.7,
+    "year": 2013,
+    "poster": ""
+  },
+  {
+    "id": 74,
+    "title": "The Imitation Game",
+    "genres": "Drama Biography Thriller",
+    "overview": "Based on Alan Turing's race against the Nazi Enigma machine during World War II.",
+    "rating": 8.0,
+    "year": 2014,
+    "poster": ""
+  },
+  {
+    "id": 75,
+    "title": "Spotlight",
+    "genres": "Drama Biography",
+    "overview": "The story of the Boston Globe's Pulitzer Prize-winning investigation into the Catholic Church sex abuse scandal.",
+    "rating": 8.1,
+    "year": 2015,
+    "poster": ""
+  },
+  {
+    "id": 76,
+    "title": "12 Years a Slave",
+    "genres": "Drama History Biography",
+    "overview": "In the antebellum United States a free black man is kidnapped and sold into slavery.",
+    "rating": 8.1,
+    "year": 2013,
+    "poster": ""
+  },
+  {
+    "id": 77,
+    "title": "Moonlight",
+    "genres": "Drama",
+    "overview": "A young black man grapples with his identity and sexuality while experiencing the hardships of life in Baltimore.",
+    "rating": 7.4,
+    "year": 2016,
+    "poster": ""
+  },
+  {
+    "id": 78,
+    "title": "The Shape of Water",
+    "genres": "Romance Fantasy Drama",
+    "overview": "At a government lab a mute janitor falls in love with a captured humanoid amphibian creature.",
+    "rating": 7.3,
+    "year": 2017,
+    "poster": ""
+  },
+  {
+    "id": 79,
+    "title": "Green Book",
+    "genres": "Drama Comedy Biography",
+    "overview": "A working-class Italian-American bouncer becomes the driver of an African-American classical pianist on a tour of the Deep South.",
+    "rating": 8.2,
+    "year": 2018,
+    "poster": ""
+  },
+  {
+    "id": 80,
+    "title": "Joker",
+    "genres": "Crime Drama Thriller",
+    "overview": "A failed stand-up comedian is driven insane and turns to a life of crime in Gotham City.",
+    "rating": 8.4,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 81,
+    "title": "Marriage Story",
+    "genres": "Drama Romance",
+    "overview": "A stage director and an actress struggle through a coast-to-coast divorce.",
+    "rating": 7.9,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 82,
+    "title": "Midsommar",
+    "genres": "Horror Drama Mystery",
+    "overview": "A couple travel to Sweden to visit a rural hometown festival that slowly reveals its terrifying agenda.",
+    "rating": 7.1,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 83,
+    "title": "Us",
+    "genres": "Horror Thriller",
+    "overview": "A family on vacation is attacked by a group of mysterious doppelgangers who look exactly like them.",
+    "rating": 6.8,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 84,
+    "title": "Little Women",
+    "genres": "Drama Romance",
+    "overview": "Jo March reflects on her life with her three sisters growing up in New England during the Civil War era.",
+    "rating": 7.8,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 85,
+    "title": "Parasite",
+    "genres": "Thriller Drama",
+    "overview": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Parks and the destitute Kims.",
+    "rating": 8.6,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 86,
+    "title": "Tenet",
+    "genres": "Action Sci-Fi Thriller",
+    "overview": "Armed with only one word a CIA operative embarks on a dangerous time-bending mission to prevent World War III.",
+    "rating": 7.3,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 87,
+    "title": "Soul",
+    "genres": "Animation Drama Comedy",
+    "overview": "A musician who has lost his passion for life is transported to the Great Before.",
+    "rating": 8.1,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 88,
+    "title": "Nomadland",
+    "genres": "Drama",
+    "overview": "A woman journeys through the American West after losing everything in the Great Recession.",
+    "rating": 7.4,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 89,
+    "title": "The Father",
+    "genres": "Drama",
+    "overview": "A man refuses all assistance from his daughter as he ages and begins to lose his grip on reality.",
+    "rating": 8.2,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 90,
+    "title": "Minari",
+    "genres": "Drama",
+    "overview": "A Korean family moves to rural Arkansas in search of the American Dream in the 1980s.",
+    "rating": 7.5,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 91,
+    "title": "Promising Young Woman",
+    "genres": "Crime Drama Thriller",
+    "overview": "A young woman haunted by a tragedy from the past takes matters into her own hands on behalf of victims.",
+    "rating": 7.5,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 92,
+    "title": "Sound of Metal",
+    "genres": "Drama Music",
+    "overview": "A heavy-metal drummer's life is turned upside down when he begins to lose his hearing.",
+    "rating": 7.8,
+    "year": 2019,
+    "poster": ""
+  },
+  {
+    "id": 93,
+    "title": "News of the World",
+    "genres": "Western Drama Adventure",
+    "overview": "A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago to her aunt and uncle.",
+    "rating": 7.2,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 94,
+    "title": "Ma Raineys Black Bottom",
+    "genres": "Drama Music",
+    "overview": "Tensions rise between blues legend Ma Rainey and her ambitious trumpet player during a recording session in 1920s Chicago.",
+    "rating": 7.5,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 95,
+    "title": "The Trial of the Chicago 7",
+    "genres": "Drama History Thriller",
+    "overview": "The story of 7 defendants charged by the federal government with conspiracy during the 1968 Democratic National Convention.",
+    "rating": 7.8,
+    "year": 2020,
+    "poster": ""
+  },
+  {
+    "id": 96,
+    "title": "Judas and the Black Messiah",
+    "genres": "Drama History Biography",
+    "overview": "The story of Fred Hampton the leader of the Black Panther Party who was killed at age 21.",
+    "rating": 7.5,
+    "year": 2021,
+    "poster": ""
+  },
+  {
+    "id": 97,
+    "title": "The Suicide Squad",
+    "genres": "Action Comedy Sci-Fi",
+    "overview": "Supervillains are assembled to destroy a powerful alien entity and a mysterious prison known as the Jotunheim.",
+    "rating": 7.2,
+    "year": 2021,
+    "poster": ""
+  },
+  {
+    "id": 98,
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "genres": "Action Fantasy Adventure",
+    "overview": "Shang-Chi must confront the past he thought he left behind when he is drawn into the Ten Rings organization.",
+    "rating": 7.4,
+    "year": 2021,
+    "poster": ""
+  },
+  {
+    "id": 99,
+    "title": "Eternals",
+    "genres": "Action Sci-Fi Fantasy",
+    "overview": "The Eternals an alien race who have been living on Earth in secret for thousands of years reunite to protect humanity.",
+    "rating": 6.3,
+    "year": 2021,
+    "poster": ""
+  },
+  {
+    "id": 100,
+    "title": "The Power of the Dog",
+    "genres": "Drama Western Thriller",
+    "overview": "A domineering rancher comes in conflict with his brother's new wife and her son.",
+    "rating": 6.9,
+    "year": 2021,
+    "poster": ""
+  }
+]

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body { font-family: 'Roboto', sans-serif; background: #141414; color: #e0e0e0; }
+        .page-header-bar { background: #1a1a2e; padding: 18px 0 10px; margin-bottom: 24px; border-bottom: 2px solid #e50914; }
+        .page-header-bar h1 { color: #e50914; font-size: 2rem; margin: 0; font-weight: 700; }
+        .back-link { color: #aaa; font-size: 0.9rem; display: inline-block; margin-bottom: 20px; text-decoration: none; }
+        .back-link:hover { color: #e50914; }
+        .wl-table { width: 100%; border-collapse: collapse; }
+        .wl-table th { background: #1a1a2e; color: #e50914; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; padding: 10px 14px; border-bottom: 2px solid #333; }
+        .wl-table td { padding: 12px 14px; border-bottom: 1px solid #2a2a2a; vertical-align: middle; }
+        .wl-table tr:hover td { background: #1e1e1e; }
+        .title-link { color: #e0e0e0; font-weight: 600; text-decoration: none; font-size: 1rem; }
+        .title-link:hover { color: #e50914; }
+        .star { color: #f5c518; }
+        .genre-badge { background: #333; border-radius: 20px; padding: 2px 10px; font-size: 0.75rem; color: #ccc; margin-right: 4px; display: inline-block; }
+        .remove-btn { background: none; border: 1px solid #555; color: #aaa; border-radius: 4px; padding: 4px 12px; font-size: 0.82rem; cursor: pointer; transition: all .2s; }
+        .remove-btn:hover { background: #e50914; border-color: #e50914; color: #fff; }
+        .empty-state { text-align: center; padding: 60px 0; color: #666; }
+        .empty-state .icon { font-size: 4rem; margin-bottom: 16px; }
+        .empty-state a { color: #e50914; text-decoration: none; font-weight: 600; }
+        .overview-cell { font-size: 0.82rem; color: #999; max-width: 300px; }
+    </style>
+{% endblock %}
+
+{% block content %}
+<div class="page-header-bar">
+    <div class="container">
+        <h1>&#9829; My Watchlist</h1>
+    </div>
+</div>
+<div class="container">
+    <a href="{{ url_for('main.index') }}" class="back-link">&#8592; Back to Browse</a>
+
+    {% if movies %}
+        <p style="color:#888; margin-bottom:16px;">{{ movies|length }} movie{{ 's' if movies|length != 1 else '' }} saved</p>
+        <table class="wl-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Rating</th>
+                    <th>Genres</th>
+                    <th>Overview</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="wl-body">
+                {% for m in movies %}
+                <tr id="row-{{ m.id }}">
+                    <td style="color:#666;">{{ loop.index }}</td>
+                    <td>
+                        <a href="{{ url_for('main.movie_detail', movie_id=m.id) }}" class="title-link">
+                            {{ m.title }}
+                        </a>
+                    </td>
+                    <td style="color:#aaa;">{{ m.year }}</td>
+                    <td><span class="star">&#9733;</span> <strong>{{ m.rating }}</strong></td>
+                    <td>
+                        {% for g in m.genres.split() %}
+                            <span class="genre-badge">{{ g }}</span>
+                        {% endfor %}
+                    </td>
+                    <td class="overview-cell">{{ m.overview[:100] }}{% if m.overview|length > 100 %}...{% endif %}</td>
+                    <td>
+                        <button class="remove-btn" onclick="removeFromWatchlist({{ m.id }}, this)">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="empty-state">
+            <div class="icon">&#9825;</div>
+            <p>Your watchlist is empty.</p>
+            <p><a href="{{ url_for('main.index') }}">Browse movies</a> and click the heart icon to add them here.</p>
+        </div>
+    {% endif %}
+</div>
+
+<script>
+function removeFromWatchlist(movieId, btn) {
+    fetch('/watchlist/toggle/' + movieId, { method: 'POST' })
+        .then(r => r.json())
+        .then(data => {
+            const row = document.getElementById('row-' + movieId);
+            if (row) row.remove();
+            // Update count text
+            const remaining = document.querySelectorAll('#wl-body tr').length;
+            if (remaining === 0) {
+                location.reload();
+            }
+        });
+}
+</script>
+{% endblock %}

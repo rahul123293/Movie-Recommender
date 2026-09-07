@@ -1,0 +1,101 @@
+id,title,genres,overview,rating,year
+1,The Shawshank Redemption,Drama,Two imprisoned men bond over years finding solace and redemption through acts of decency.,9.3,1994
+2,The Godfather,Crime Drama,The aging patriarch of an organized crime dynasty transfers control to his reluctant son.,9.2,1972
+3,The Dark Knight,Action Thriller,Batman battles the Joker a criminal mastermind who creates chaos in Gotham City.,9.0,2008
+4,Pulp Fiction,Crime Drama,The lives of two hitmen a boxer a gangster and his wife intertwine in tales of violence.,8.9,1994
+5,Forrest Gump,Drama Romance,The presidencies of Kennedy and Johnson Vietnam Watergate through the eyes of an Alabama man.,8.8,1994
+6,Inception,Sci-Fi Thriller,A thief who steals corporate secrets through dream-sharing technology is given a task to plant an idea.,8.8,2010
+7,The Matrix,Sci-Fi Action,A computer hacker learns reality is a simulation and joins a rebellion against machines.,8.7,1999
+8,Goodfellas,Crime Drama,The story of Henry Hill and his life in the mob covering his relationship with his wife.,8.7,1990
+9,The Silence of the Lambs,Thriller Horror,A young FBI cadet seeks help from imprisoned cannibal Hannibal Lecter to catch a serial killer.,8.6,1991
+10,Interstellar,Sci-Fi Drama,A team of explorers travel through a wormhole in space in an attempt to ensure humanity survival.,8.6,2014
+11,The Lion King,Animation Drama,Lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.,8.5,1994
+12,Toy Story,Animation Comedy,A cowboy doll is threatened by a new spaceman figure as the favorite toy of Andy.,8.3,1995
+13,Finding Nemo,Animation Comedy,After his son is taken by a diver a clownfish sets out on a journey to bring him home.,8.1,2003
+14,The Avengers,Action Sci-Fi,Earths mightiest heroes must come together to stop Loki from conquering Earth.,8.0,2012
+15,Titanic,Drama Romance,A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the Titanic.,7.9,1997
+16,Jurassic Park,Sci-Fi Action,During a preview tour a theme park suffers a major power breakdown and dinosaurs escape.,8.1,1993
+17,The Truman Show,Drama Comedy,An insurance salesman discovers his whole life is a TV show.,8.1,1998
+18,Schindlers List,Drama History,In German-occupied Poland during World War II industrialist Oskar Schindler saves Jewish lives.,8.9,1993
+19,Fight Club,Drama Thriller,An insomniac office worker and a soap salesman build a network of underground fight clubs.,8.8,1999
+20,Gladiator,Action Drama,A Roman general is betrayed and his family murdered by a corrupt prince.,8.5,2000
+21,The Departed,Crime Thriller,An undercover cop and a mole in the police attempt to identify each other.,8.5,2006
+22,Saving Private Ryan,War Drama,American soldiers behind enemy lines are ordered to find a paratrooper whose brothers have been killed.,8.6,1998
+23,Braveheart,Action Drama History,Scottish warrior William Wallace leads a revolt against the cruel English ruler Edward I.,8.4,1995
+24,Back to the Future,Sci-Fi Comedy,A teenager is accidentally sent back in time to 1955 where he must ensure his parents meet.,8.5,1985
+25,The Terminator,Sci-Fi Action,A cyborg assassin is sent from the future to kill the mother of the man who will lead humanity.,8.1,1984
+26,Alien,Sci-Fi Horror,The crew of a commercial spacecraft encounters a deadly extraterrestrial life form.,8.5,1979
+27,Blade Runner,Sci-Fi Thriller,A blade runner must pursue and terminate four replicants who stole a ship.,8.1,1982
+28,E.T. the Extra-Terrestrial,Sci-Fi Drama,A lonely boy befriends a gentle alien who is stranded on Earth.,7.8,1982
+29,Home Alone,Comedy,An eight-year-old kid is accidentally left behind while his family flies to France.,7.7,1990
+30,Die Hard,Action Thriller,A New York cop must foil an elaborate heist at a Los Angeles skyscraper Christmas party.,8.2,1988
+31,The Princess Bride,Romance Comedy Adventure,A farmhand boy rescues a princess from an evil prince with the help of colorful companions.,8.0,1987
+32,Groundhog Day,Comedy Drama,A weatherman finds himself reliving the same day over and over again.,8.0,1993
+33,Clueless,Comedy Romance,A rich high school student uses her popularity to help those around her while searching for love.,7.0,1995
+34,Mean Girls,Comedy,A girl who was homeschooled transfers to a public high school and falls in with a clique.,7.1,2004
+35,The Grand Budapest Hotel,Comedy Adventure,The adventures of a legendary concierge at a famous hotel between the wars.,8.1,2014
+36,Parasite,Thriller Drama,A poor family schemes to become employed by a wealthy family.,8.6,2019
+37,Get Out,Horror Thriller,A young African-American man visits his white girlfriends parents for the weekend.,7.7,2017
+38,A Quiet Place,Horror Sci-Fi,A family struggles to survive in a post-apocalyptic world inhabited by blind monsters.,7.5,2018
+39,Hereditary,Horror Drama,A grieving family is haunted by tragic and disturbing occurrences.,7.3,2018
+40,The Conjuring,Horror Thriller,Paranormal investigators help a family terrorized by a dark presence in their farmhouse.,7.5,2013
+41,Avengers Endgame,Action Sci-Fi,The surviving heroes work to reverse the damage done by Thanos and restore balance.,8.4,2019
+42,Black Panther,Action Sci-Fi,The king of Wakanda must defend his nation from a vengeful outsider.,7.3,2018
+43,Wonder Woman,Action Drama,An Amazonian princess leaves her island to fight in World War I.,7.4,2017
+44,Spider-Man Into the Spider-Verse,Animation Action,Teen Miles Morales becomes the Spider-Man of his universe and meets alternate versions.,8.4,2018
+45,Coco,Animation Drama,A young boy who dreams of becoming a musician embarks on an extraordinary journey to the Land of the Dead.,8.4,2017
+46,Up,Animation Drama Adventure,A 78-year-old man flies to Paradise Falls with a young boy accidentally tagging along.,8.3,2009
+47,WALL-E,Animation Sci-Fi Romance,A small waste-collecting robot inadvertently embarks on a space journey that will determine the fate of mankind.,8.4,2008
+48,Inside Out,Animation Drama,A young girl is uprooted from her life when her family relocates forcing her emotions into turmoil.,8.2,2015
+49,Knives Out,Mystery Thriller,A detective investigates the death of a patriarch of an eccentric wealthy family.,7.9,2019
+50,Memento,Thriller Mystery,A man with short-term memory loss attempts to track down his wifes murderer.,8.4,2000
+51,The Prestige,Drama Thriller Mystery,Two stage magicians engage in a bitter rivalry and resort to sabotage and trickery.,8.5,2006
+52,Whiplash,Drama Music,A promising young drummer enrolls at a cutthroat music conservatory and is pushed beyond his limits.,8.5,2014
+53,La La Land,Romance Drama Music,A jazz musician and an aspiring actress fall in love in Los Angeles.,8.0,2016
+54,The Wolf of Wall Street,Crime Drama Comedy,Based on the true story of Jordan Belfort a stockbroker who engages in corruption and fraud.,8.2,2013
+55,Django Unchained,Western Action,A freed slave and a German bounty hunter set out to rescue the slave's wife.,8.4,2012
+56,Inglourious Basterds,War Drama Thriller,In Nazi-occupied France a group of Jewish soldiers plan to assassinate Nazi leaders.,8.3,2009
+57,The Revenant,Adventure Drama Thriller,A frontiersman on a fur trading expedition fights for survival after being mauled by a bear.,8.0,2015
+58,Mad Max Fury Road,Action Sci-Fi,In a post-apocalyptic world a woman rebels against a tyrannical ruler in the wasteland.,8.1,2015
+59,John Wick,Action Thriller,An ex-hit-man comes out of retirement to track down the gangsters that killed his dog.,7.4,2014
+60,Dune,Sci-Fi Adventure Drama,A mythic and emotionally charged hero's journey follows a noble family to a dangerous desert planet.,8.0,2021
+61,No Country for Old Men,Crime Drama Thriller,Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong.,8.1,2007
+62,There Will Be Blood,Drama History,A story of family religion hatred and oil told through the life of a prospector in late 1800s.,8.2,2007
+63,Eternal Sunshine of the Spotless Mind,Romance Drama Sci-Fi,When their relationship turns sour a couple undergoes a medical procedure to erase memories of each other.,8.3,2004
+64,Her,Romance Drama Sci-Fi,A writer develops an unlikely relationship with an operating system designed to meet his every need.,8.0,2013
+65,Lost in Translation,Drama Romance Comedy,A faded movie star and a neglected young woman form an unlikely bond in Tokyo.,7.7,2003
+66,The Social Network,Drama Biography,Harvard student Mark Zuckerberg creates Facebook while being sued by others who claim ownership.,7.7,2010
+67,Whiplash,Drama Music,A brilliant music student is pushed to his limits by a ruthless instructor at a prestigious conservatory.,8.5,2014
+68,1917,War Drama,Two British soldiers are tasked with delivering a message that could save 1600 men.,8.3,2019
+69,Dunkirk,War Drama Thriller,Allied soldiers from Belgium and Britain are surrounded by the German Army during the Second World War.,7.9,2017
+70,Arrival,Sci-Fi Drama Mystery,A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft land worldwide.,7.9,2016
+71,Ex Machina,Sci-Fi Drama Thriller,A programmer is selected to participate in a study involving an artificial intelligence housed in a robot.,7.7,2014
+72,The Martian,Sci-Fi Drama Comedy,An astronaut becomes stranded on Mars after his team assumes him dead and must find a way to signal Earth.,8.0,2015
+73,Gravity,Sci-Fi Thriller Drama,Two astronauts work together to survive after an accident leaves them stranded in space.,7.7,2013
+74,The Imitation Game,Drama Biography Thriller,Based on Alan Turing's race against the Nazi Enigma machine during World War II.,8.0,2014
+75,Spotlight,Drama Biography,The story of the Boston Globe's Pulitzer Prize-winning investigation into the Catholic Church sex abuse scandal.,8.1,2015
+76,12 Years a Slave,Drama History Biography,In the antebellum United States a free black man is kidnapped and sold into slavery.,8.1,2013
+77,Moonlight,Drama,A young black man grapples with his identity and sexuality while experiencing the hardships of life in Baltimore.,7.4,2016
+78,The Shape of Water,Romance Fantasy Drama,At a government lab a mute janitor falls in love with a captured humanoid amphibian creature.,7.3,2017
+79,Green Book,Drama Comedy Biography,A working-class Italian-American bouncer becomes the driver of an African-American classical pianist on a tour of the Deep South.,8.2,2018
+80,Joker,Crime Drama Thriller,A failed stand-up comedian is driven insane and turns to a life of crime in Gotham City.,8.4,2019
+81,Marriage Story,Drama Romance,A stage director and an actress struggle through a coast-to-coast divorce.,7.9,2019
+82,Midsommar,Horror Drama Mystery,A couple travel to Sweden to visit a rural hometown festival that slowly reveals its terrifying agenda.,7.1,2019
+83,Us,Horror Thriller,A family on vacation is attacked by a group of mysterious doppelgangers who look exactly like them.,6.8,2019
+84,Little Women,Drama Romance,Jo March reflects on her life with her three sisters growing up in New England during the Civil War era.,7.8,2019
+85,Parasite,Thriller Drama,Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Parks and the destitute Kims.,8.6,2019
+86,Tenet,Action Sci-Fi Thriller,Armed with only one word a CIA operative embarks on a dangerous time-bending mission to prevent World War III.,7.3,2020
+87,Soul,Animation Drama Comedy,A musician who has lost his passion for life is transported to the Great Before.,8.1,2020
+88,Nomadland,Drama,A woman journeys through the American West after losing everything in the Great Recession.,7.4,2020
+89,The Father,Drama,A man refuses all assistance from his daughter as he ages and begins to lose his grip on reality.,8.2,2020
+90,Minari,Drama,A Korean family moves to rural Arkansas in search of the American Dream in the 1980s.,7.5,2020
+91,Promising Young Woman,Crime Drama Thriller,A young woman haunted by a tragedy from the past takes matters into her own hands on behalf of victims.,7.5,2020
+92,Sound of Metal,Drama Music,A heavy-metal drummer's life is turned upside down when he begins to lose his hearing.,7.8,2019
+93,News of the World,Western Drama Adventure,A Civil War veteran agrees to deliver a girl taken by the Kiowa people years ago to her aunt and uncle.,7.2,2020
+94,Ma Raineys Black Bottom,Drama Music,Tensions rise between blues legend Ma Rainey and her ambitious trumpet player during a recording session in 1920s Chicago.,7.5,2020
+95,The Trial of the Chicago 7,Drama History Thriller,The story of 7 defendants charged by the federal government with conspiracy during the 1968 Democratic National Convention.,7.8,2020
+96,Judas and the Black Messiah,Drama History Biography,The story of Fred Hampton the leader of the Black Panther Party who was killed at age 21.,7.5,2021
+97,The Suicide Squad,Action Comedy Sci-Fi,Supervillains are assembled to destroy a powerful alien entity and a mysterious prison known as the Jotunheim.,7.2,2021
+98,Shang-Chi and the Legend of the Ten Rings,Action Fantasy Adventure,Shang-Chi must confront the past he thought he left behind when he is drawn into the Ten Rings organization.,7.4,2021
+99,Eternals,Action Sci-Fi Fantasy,The Eternals an alien race who have been living on Earth in secret for thousands of years reunite to protect humanity.,6.3,2021
+100,The Power of the Dog,Drama Western Thriller,A domineering rancher comes in conflict with his brother's new wife and her son.,6.9,2021

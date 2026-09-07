@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body { font-family: 'Roboto', sans-serif; background: #141414; color: #e0e0e0; }
+        .back-link { color: #aaa; font-size: 0.9rem; display: inline-block; margin: 18px 0 10px; text-decoration: none; }
+        .back-link:hover { color: #e50914; }
+        .detail-hero { background: #1a1a2e; border-radius: 10px; padding: 30px; margin-bottom: 30px; display: flex; gap: 30px; align-items: flex-start; }
+        .poster-box { width: 200px; height: 300px; background: linear-gradient(135deg, #2a2a4a, #1a1a2e); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 5rem; color: #555; flex-shrink: 0; border: 2px solid #333; }
+        .detail-info { flex: 1; }
+        .detail-info h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .detail-meta { display: flex; gap: 16px; margin-bottom: 14px; flex-wrap: wrap; }
+        .badge-pill { background: #333; border-radius: 20px; padding: 3px 12px; font-size: 0.82rem; color: #ccc; }
+        .badge-rating { background: #f5c518; color: #000; font-weight: 700; }
+        .badge-year { background: #e50914; color: #fff; }
+        .overview-text { color: #ccc; line-height: 1.7; font-size: 0.97rem; margin-bottom: 20px; }
+        .wl-main-btn { padding: 10px 24px; border-radius: 6px; border: none; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background .2s; }
+        .wl-main-btn.not-in { background: #e50914; color: #fff; }
+        .wl-main-btn.in-list { background: #444; color: #fff; }
+        .section-title { color: #e50914; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin: 30px 0 16px; border-left: 4px solid #e50914; padding-left: 10px; }
+        .rec-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+        .rec-card { background: #1e1e1e; border-radius: 8px; width: 150px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.4); transition: transform .2s; }
+        .rec-card:hover { transform: translateY(-3px); }
+        .rec-poster { width: 150px; height: 225px; background: linear-gradient(135deg, #2a2a4a, #1a1a2e); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #555; }
+        .rec-card .card-body { padding: 8px; }
+        .rec-card .card-title { font-size: 0.8rem; font-weight: 600; color: #eee; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .rec-card .card-meta { font-size: 0.72rem; color: #aaa; }
+        .star { color: #f5c518; }
+        .reviews-section { background: #1a1a2e; border-radius: 10px; padding: 24px; margin-bottom: 30px; }
+        .review-card { border-bottom: 1px solid #333; padding: 12px 0; }
+        .review-card:last-child { border-bottom: none; }
+        .review-author { font-size: 0.85rem; color: #aaa; margin-bottom: 4px; }
+        .review-title-link { color: #e0e0e0; font-weight: 600; text-decoration: none; }
+        .review-title-link:hover { color: #e50914; }
+        .write-review-btn { display: inline-block; margin-top: 14px; padding: 8px 20px; background: #27ae60; color: #fff; border-radius: 6px; font-weight: 600; text-decoration: none; }
+        .write-review-btn:hover { background: #219a52; color: #fff; }
+    </style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <a href="{{ url_for('main.index') }}" class="back-link">&#8592; Back to Browse</a>
+
+    <!-- Hero section -->
+    <div class="detail-hero">
+        <div class="poster-box">&#127916;</div>
+        <div class="detail-info">
+            <h1>{{ movie.title }}</h1>
+            <div class="detail-meta">
+                <span class="badge-pill badge-rating">&#9733; {{ movie.rating }}</span>
+                <span class="badge-pill badge-year">{{ movie.year }}</span>
+                {% for g in movie.genres.split() %}
+                    <span class="badge-pill">{{ g }}</span>
+                {% endfor %}
+            </div>
+            <p class="overview-text">{{ movie.overview }}</p>
+
+            <!-- Watchlist button -->
+            {% set in_wl = movie.id in watchlist_ids %}
+            <button id="wl-btn"
+                    class="wl-main-btn {{ 'in-list' if in_wl else 'not-in' }}"
+                    onclick="toggleWatchlist({{ movie.id }})">
+                {{ '&#9829; In Watchlist' if in_wl else '&#9825; Add to Watchlist' }}
+            </button>
+        </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="reviews-section">
+        <div class="section-title" style="margin-top:0;">Reviews</div>
+        {% if reviews %}
+            {% for review in reviews %}
+            <div class="review-card">
+                <div class="review-author">by {{ review.user.username }}</div>
+                <a href="{{ url_for('main.single_review', id=review.id) }}" class="review-title-link">
+                    {{ review.review_title }}
+                </a>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p style="color:#888;">No reviews yet. Be the first!</p>
+        {% endif %}
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('main.new_review', id=movie.id) }}" class="write-review-btn">Write a Review</a>
+        {% else %}
+            <p style="margin-top:10px; color:#888; font-size:0.9rem;">
+                <a href="{{ url_for('auth.login') }}" style="color:#e50914;">Sign in</a> to write a review.
+            </p>
+        {% endif %}
+    </div>
+
+    <!-- Recommendations -->
+    {% if recommendations %}
+    <div class="section-title">You May Also Like</div>
+    <div class="rec-grid">
+        {% for rec in recommendations %}
+        <a href="{{ url_for('main.movie_detail', movie_id=rec.id) }}" style="text-decoration:none;">
+            <div class="rec-card">
+                <div class="rec-poster">&#127916;</div>
+                <div class="card-body">
+                    <div class="card-title" title="{{ rec.title }}">{{ rec.title }}</div>
+                    <div class="card-meta">
+                        <span class="star">&#9733;</span> {{ rec.rating }} &nbsp;&bull;&nbsp; {{ rec.year }}
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+
+<script>
+function toggleWatchlist(movieId) {
+    const btn = document.getElementById('wl-btn');
+    fetch('/watchlist/toggle/' + movieId, { method: 'POST' })
+        .then(r => r.json())
+        .then(data => {
+            if (data.added) {
+                btn.innerHTML = '&#9829; In Watchlist';
+                btn.className = 'wl-main-btn in-list';
+            } else {
+                btn.innerHTML = '&#9825; Add to Watchlist';
+                btn.className = 'wl-main-btn not-in';
+            }
+        });
+}
+</script>
+{% endblock %}

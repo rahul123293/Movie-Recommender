@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body { font-family: 'Roboto', sans-serif; background: #141414; color: #e0e0e0; }
+        .page-header-bar { background: #1a1a2e; padding: 18px 0 10px; margin-bottom: 20px; border-bottom: 2px solid #e50914; }
+        .page-header-bar h1 { color: #e50914; font-size: 2rem; margin: 0; font-weight: 700; letter-spacing: 1px; }
+        .filter-bar { background: #1a1a2e; padding: 14px 16px; border-radius: 6px; margin-bottom: 24px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+        .filter-bar input[type="text"] { flex: 1; min-width: 180px; background: #222; border: 1px solid #444; color: #eee; border-radius: 4px; padding: 7px 12px; }
+        .filter-bar select { background: #222; border: 1px solid #444; color: #eee; border-radius: 4px; padding: 7px 10px; }
+        .filter-bar .btn { background: #e50914; border: none; color: #fff; padding: 7px 20px; border-radius: 4px; font-weight: 600; }
+        .filter-bar .btn-clear { background: #444; }
+        .movie-grid { display: flex; flex-wrap: wrap; gap: 18px; }
+        .movie-card { background: #1e1e1e; border-radius: 8px; overflow: hidden; width: 170px; flex-shrink: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); transition: transform .2s; position: relative; }
+        .movie-card:hover { transform: translateY(-4px); box-shadow: 0 6px 20px rgba(229,9,20,0.3); }
+        .movie-card .poster-placeholder { width: 170px; height: 255px; background: linear-gradient(135deg, #2a2a4a, #1a1a2e); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #555; }
+        .movie-card .card-body { padding: 10px; }
+        .movie-card .card-title { font-size: 0.85rem; font-weight: 600; color: #eee; margin: 0 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .movie-card .card-meta { font-size: 0.75rem; color: #aaa; }
+        .movie-card .star { color: #f5c518; font-size: 0.8rem; }
+        .wl-btn { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); border: none; border-radius: 50%; width: 30px; height: 30px; color: #fff; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s; }
+        .wl-btn.in-list { color: #e50914; }
+        .section-title { color: #e50914; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 16px; border-left: 4px solid #e50914; padding-left: 10px; }
+        .no-results { color: #888; font-size: 1.1rem; margin-top: 40px; }
+        .watchlist-badge { background: #e50914; color: #fff; border-radius: 10px; font-size: 0.75rem; padding: 1px 7px; margin-left: 5px; vertical-align: middle; }
+    </style>
+{% endblock %}
+
+{% block content %}
+<div class="page-header-bar">
+    <div class="container">
+        <h1>&#127916; Movie Browser</h1>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Filter bar -->
+    <form method="GET" action="{{ url_for('main.index') }}" class="filter-bar">
+        <input type="text" name="search" placeholder="Search titles..." value="{{ search }}">
+        <select name="genre">
+            <option value="">All Genres</option>
+            {% for g in genres %}
+                <option value="{{ g }}" {% if g == selected_genre %}selected{% endif %}>{{ g }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" class="btn">Search</button>
+        <a href="{{ url_for('main.index') }}" class="btn btn-clear">Clear</a>
+        <a href="{{ url_for('main.watchlist') }}" class="btn" style="margin-left:auto;">
+            &#9829; Watchlist
+            {% if watchlist_ids %}<span class="watchlist-badge">{{ watchlist_ids|length }}</span>{% endif %}
+        </a>
+    </form>
+
+    <!-- Results -->
+    {% if movies %}
+        <p class="section-title">{{ movies|length }} movie{{ 's' if movies|length != 1 else '' }} found</p>
+        <div class="movie-grid">
+            {% for m in movies %}
+            <div class="movie-card">
+                <!-- Watchlist toggle button -->
+                <button class="wl-btn {% if m.id in watchlist_ids %}in-list{% endif %}"
+                        onclick="toggleWatchlist({{ m.id }}, this)"
+                        title="{{ 'Remove from watchlist' if m.id in watchlist_ids else 'Add to watchlist' }}">
+                    {{ '&#9829;' if m.id in watchlist_ids else '&#9825;' }}
+                </button>
+                <!-- Poster placeholder (no external images) -->
+                <a href="{{ url_for('main.movie_detail', movie_id=m.id) }}">
+                    <div class="poster-placeholder">&#127916;</div>
+                </a>
+                <div class="card-body">
+                    <div class="card-title" title="{{ m.title }}">{{ m.title }}</div>
+                    <div class="card-meta">
+                        <span class="star">&#9733;</span> {{ m.rating }} &nbsp;&bull;&nbsp; {{ m.year }}
+                    </div>
+                    <div class="card-meta" style="margin-top:3px; font-style:italic;">{{ m.genres }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="no-results">No movies found. Try a different search or genre filter.</p>
+    {% endif %}
+</div>
+
+<script>
+function toggleWatchlist(movieId, btn) {
+    fetch('/watchlist/toggle/' + movieId, { method: 'POST' })
+        .then(r => r.json())
+        .then(data => {
+            if (data.added) {
+                btn.innerHTML = '&#9829;';
+                btn.classList.add('in-list');
+                btn.title = 'Remove from watchlist';
+            } else {
+                btn.innerHTML = '&#9825;';
+                btn.classList.remove('in-list');
+                btn.title = 'Add to watchlist';
+            }
+            // Update badge
+            const badge = document.querySelector('.watchlist-badge');
+            const wlLink = document.querySelector('a[href*="watchlist"]');
+            if (data.count > 0) {
+                if (badge) {
+                    badge.textContent = data.count;
+                } else {
+                    const newBadge = document.createElement('span');
+                    newBadge.className = 'watchlist-badge';
+                    newBadge.textContent = data.count;
+                    wlLink.appendChild(newBadge);
+                }
+            } else if (badge) {
+                badge.remove();
+            }
+        });
+}
+</script>
+{% endblock %}
